@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon" />
+
+    <!--=============== FONTAWESOME ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Risang Portfolio Website</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Portfolio.</a>
+        <label class="toggle" for="switch">
+          <input id="switch" type="checkbox" />
+          <div class="icon-theme icon--moon">
+            <svg height="20" width="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                clip-rule="evenodd"
+                d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+          </div>
+          <div class="icon-theme icon--sun">
+            <svg height="20" width="20" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+              ></path>
+            </svg>
+          </div>
+        </label>
+      </nav>
+    </header>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home container">
+        <figure class="hero-img">
+          <img src="assets/img/profil.png" alt="Risang Abdurrahman Gustiwa" class="img-cover" />
+        </figure>
+        <article class="hero-desc">
+          <div class="hero-content">
+            <span class="digiskill">Web Developer</span>
+            <h1 class="full-name">Risang Abdurrahman Gustiwa</h1>
+            <p class="hero-text">
+              Assalamu'alaikum, saya seorang web developer yang saat ini berdomisili di Purwokerto, Jawa Tengah. Saya memiliki minat dalam bidang pemrograman aplikasi berbasis website yang berfokus pada tampilan menarik, fungsionalitas dan
+              ramah pengguna.
+            </p>
+          </div>
+          <div class="hero-btn">
+            <button class="cv-download">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <a href="assets/pdf/Risang Abdurrahman G.pdf" download="" class="button-text">Download CV</a>
+            </button>
+          </div>
+        </article>
+      </section>
+      <div class="main-content">
+        <!--==================== MENU ====================-->
+        <section class="menu container">
+          <div class="main-tab">
+            <div class="tab">
+              <button class="tablinks" onclick="openTab(event, 'Resume')" id="defaultOpen">Resume</button>
+              <button class="tablinks" onclick="openTab(event, 'Portfolio')">Portfolio</button>
+              <button class="tablinks" onclick="openTab(event, 'Kontak')">Kontak</button>
+            </div>
+            <div class="tab-list">
+              <!-- Resume Tab -->
+              <div id="Resume" class="tabcontent">
+                <!-- Experience -->
+                <h4 class="stat-title">Pengalaman</h4>
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <div class="tl-icon">
+                      <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">Oktober 2021 - Januari 2022</p>
+                    <h5>Asisten Praktikum Basis Data<span> - IT Telkom Purwokerto</span></h5>
+                    <ul>
+                      <li>Membimbing mahasiswa untuk memahami materi tentang pemodelan basis data dengan aplikasi Xampp.</li>
+                      <li>Mengajarkan materi praktikum pemodelan basis data berdasarkan modul yang sudah disediakan.</li>
+                      <li>Melakukan evaluasi dengan memberikan tugas mingguan serta ujian dengan tenggat waktu tertentu.</li>
+                      <li>Memberikan penilaian dari hasil evaluasi tugas yang sudah dilakukan.</li>
+                      <li>Berkomunikasi efektif dengan dosen pengampu mata kuliah untuk melaporkan kegiatan selama praktikum serta memberi umpan balik dari masalah yang muncul.</li>
+                    </ul>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="tl-icon">
+                      <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">Agustus - September 2022</p>
+                    <h5>Web Developer<span> - PT. Puskomedia Indonesia Kreatif</span></h5>
+                    <ul>
+                      <li>
+                        Membuat UI dan menampilkan data dari database dalam bentuk grafik untuk website sistem informasi monitoring desa (Monitor Panda). Data kependudukan yang ditampilkan yaitu vaksin, akun, adminduk dan inventaris. Tech
+                        stack yang digunakan yaitu laravel dengan library high chart untuk menampilkan grafik diagram.
+                      </li>
+                      <li>
+                        Membuat fitur geolokasi pada website Panda SID (Sistem Informasi Desa) untuk data peta UMKM dengan tech stack codeigniter serta untuk menampilkan peta menggunakan leaflet js. Membuat UI serta sistem CRUD untuk menu
+                        peta titik UMKM sesuai dengan batas wilayah desa yang sudah dibuat.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Skills -->
+                <h4 class="stat-title">Skill dan Teknologi</h4>
+                <ul class="skill-list">
+                  <li class="skill-item">
+                    <img class="skill-icon" src="assets/img/html-1.svg" alt="HTML5" width="28" height="28" />
+                    <span class="skill-name">HTML5</span>
+                  </li>
+                  <li class="skill-item">
+                    <img class="skill-icon" src="assets/img/css-3.svg" alt="CSS3" width="28" height="28" />
+                    <span class="skill-name">CSS3</span>
+                  </li>
+                  <li class="skill-item">
+                    <img class="skill-icon" src="assets/img/javascript-1.svg" alt="JavaScript" width="28" height="28" />
+                    <span class="skill-name">JavaScript</span>
+                  </li>
+                  <li class="skill-item">
+                    <img class="skill-icon" src="assets/img/php-1.svg" alt="PHP" width="28" height="28" />
+                    <span class="skill-name">PHP</span>
+                  </li>
+                  <li class="skill-item">
+                    <img class="skill-icon" src="assets/img/tailwindcss.svg" alt="TailwindCSS" width="28" height="28" />
+                    <span class="skill-name">Tailwind CSS</span>
+                  </li>
+                  <li class="skill-item">
+                    <img class="skill-icon" src="assets/img/bootstrap-5-1.svg" alt="Bootstrap" width="28" height="28" />
+                    <span class="skill-name">Bootstrap</span>
+                  </li>
+                  <li class="skill-item">
+                    <img class="skill-icon" src="assets/img/laravel-2.svg" alt="Laravel" width="28" height="28" />
+                    <span class="skill-name">Laravel</span>
+                  </li>
+                  <li class="skill-item">
+                    <img class="skill-icon" src="assets/img/mysql-logo.svg" alt="MySQL" width="28" height="28" />
+                    <span class="skill-name">MySQL</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- Portfolio Tab -->
+              <div id="Portfolio" class="tabcontent">
+                <div class="projects">
+                  <div class="project-item">
+                    <div class="project-image">
+                      <img src="assets/img/wisaba.png" alt="wisata baturraden 360 view" />
+                      <a class="source" href="https://github.com/risangabdurrahmang/Website_wisata_360_view" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                    </div>
+                    <div class="project-detail">
+                      <h3 class="project-name">Website Wisata Baturraden 360 <i class="fa-solid fa-chevron-down"></i></h3>
+                      <p class="projectDesc">
+                        Website sistem informasi wisata baturraden yang dapat menampilkan view 360 derajat di lokasi wisata beserta lokasi titik lokasi wisata dengan cara scan barcode. Tampilan website terbagi menjadi 2 pengguna yaitu untuk
+                        admin serta pengunjung.
+                      </p>
+                    </div>
+                    <div class="tech-stack">
+                      <div class="tech-icon">
+                        <img class="tech-img" src="assets/img/php-1.svg" alt="php" width="28" height="28" />
+                      </div>
+                      <div class="tech-icon">
+                        <img class="tech-img" src="assets/img/bootstrap-5-1.svg" width="28" height="28" alt="bootstrap" />
+                      </div>
+                      <div class="tech-icon">
+                        <img class="tech-img" src="assets/img/mysql-logo.svg" width="28" height="28" alt="mysql" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-item">
+                    <div class="project-image">
+                      <img src="assets/img/pemetaankost.png" alt="Pemetaan Kost Purwokerto Utara" />
+                      <a class="source" href="https://github.com/risangabdurrahmang/website_pemetaan_kost_purwokerto_utara" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                    </div>
+                    <div class="project-detail">
+                      <h3 class="project-name">Website Pemetaan Kost Purwokerto Utara <i class="fa-solid fa-chevron-down"></i></h3>
+                      <p class="projectDesc">
+                        Website sistem informasi pemetaan kost pada kecamatan purwokerto utara yang memiliki fitur-fitur yaitu informasi titik lokasi kost, detail informasi kost serta penunjuk rute perjalanan dari lokasi pengakses website
+                        menuju lokasi kost yang dipilih.
+                      </p>
+                    </div>
+                    <div class="tech-stack">
+                      <div class="tech-icon">
+                        <img class="tech-img" src="assets/img/php-1.svg" alt="php" />
+                      </div>
+                      <div class="tech-icon">
+                        <img class="tech-img" src="assets/img/tailwindcss.svg" alt="tailwind css" />
+                      </div>
+                      <div class="tech-icon">
+                        <img class="tech-img" src="assets/img/mysql-logo.svg" alt="mysql" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-item">
+                    <div class="project-image">
+                      <img src="assets/img/pemesanantiketwisata.png" alt="Pemesanan Tiket Wisata" />
+                      <a class="source" href="https://github.com/risangabdurrahmang/website_pemesanan_tiket_wisata" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                    </div>
+                    <div class="project-detail">
+                      <h3 class="project-name">Website Pemesanan Tiket Wisata <i class="fa-solid fa-chevron-down"></i></h3>
+                      <p class="projectDesc">Fitur-fitur website meliputi pemesanan tiket berdasarkan jenis pengunjung dan nama wisata, bukti pemesanan tiket serta grafik dinamis mengenai total jumlah pengunjung.</p>
+                    </div>
+                    <div class="tech-stack">
+                      <div class="tech-icon">
+                        <img class="tech-img" src="assets/img/laravel-2.svg" alt="laravel" />
+                      </div>
+                      <div class="tech-icon">
+                        <img class="tech-img" src="assets/img/tailwindcss.svg" alt="tailwind css" />
+                      </div>
+                      <div class="tech-icon">
+                        <img class="tech-img" src="assets/img/mysql-logo.svg" alt="mysql" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-item">
+                    <div class="project-image">
+                      <img src="assets/img/teraskayu.png" alt="Pemesanan Furnitur" />
+                      <a class="source" href="https://github.com/risangabdurrahmang/website_pemesanan_furnitur" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                      </a>
+                    </div>
+                    <div class="project-detail">
+                      <h3 class="project-name">Website Pemesanan Furnitur <i class="fa-solid fa-chevron-down"></i></h3>
+                      <p class="projectDesc">
+                        Fitur-fitur dalam website meliputi pemesanan produk, kelola data produk, transaksi, pembayaran via transfer antar bank dan chatting antara admin dan pembeli. Pembeli dapat memilih 2 jenis pemesanan yaitu dari katalog
+                        yang tersedia dengan menentukan dimensi panjang dan lebar atau memiliki desain sendiri yang akan dikirimkan dalam bentuk gambar serta deskripsi.
+                      </p>
+                    </div>
+                    <div class="tech-stack">
+                      <div class="tech-icon">
+                        <img class="tech-img" src="assets/img/laravel-2.svg" alt="laravel" />
+                      </div>
+                      <div class="tech-icon">
+                        <img class="tech-img" src="assets/img/tailwindcss.svg" alt="tailwind css" />
+                      </div>
+                      <div class="tech-icon">
+                        <img class="tech-img" src="assets/img/mysql-logo.svg" alt="mysql" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Contact Tab -->
+              <div id="Kontak" class="tabcontent">
+                <div class="contacts">
+                  <div class="infos">
+                    <div class="contact-info">
+                      <h4 class="stat-title">Info Kontak</h4>
+                      <div class="contact-list">
+                        <a href="#" class="contact-item">
+                          <i class="fa-solid fa-location-dot"></i>
+                          <span class="contact-name">Purwokerto, Jawa Tengah</span>
+                        </a>
+                        <a href="mailto:rabdurrahmang@gmail.com" class="contact-item">
+                          <i class="fa-regular fa-envelope"></i>
+                          <span class="contact-name">rabdurrahmang@gmail.com</span>
+                        </a>
+                        <a href="tel:+628977373148" class="contact-item">
+                          <i class="fa-solid fa-phone"></i>
+                          <span class="contact-name">+628977373148</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="social-info">
+                      <h4 class="stat-title">Media Sosial</h4>
+                      <div class="hero-social">
+                        <a class="social-link1" href="https://www.instagram.com/risangabdurrahmang/?igsh=dTVweGV2dWxvZnVi">
+                          <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a class="social-link2" href="https://www.linkedin.com/in/risang-abdurrahman-gustiwa-a3132a286/">
+                          <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a class="social-link3" href="https://www.facebook.com/risangabdurrahman.gustiwa/">
+                          <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a class="social-link4" href="https://github.com/risangabdurrahmang">
+                          <i class="fa-brands fa-github"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-content">
+                    <form class="form-control" method="POST" id="form" autocomplete="off">
+                      <input type="hidden" name="access_key" value="5adbf925-5bc9-4cc2-9824-420bfb7cc8f5" />
+                      <div class="input-field">
+                        <input required placeholder="your name" class="input-item" type="text" name="name" id="name" minlength="3" oninvalid="this.setCustomValidity('Harus isi')" oninput="this.setCustomValidity('')" />
+                        <label class="label-item" for="name">Nama</label>
+                      </div>
+                      <div class="input-field">
+                        <input required placeholder="your email" class="input-item" type="email" name="email" id="email" pattern="^[^ ]+@[^ ]+\.[a-z]{2,3}$" />
+                        <label class="label-item" for="email">Email</label>
+                      </div>
+                      <div class="input-field">
+                        <textarea required placeholder="your message" minlength="3" class="input-item" name="message" id="message"></textarea>
+                        <label class="label-item" for="message">Pesan</label>
+                      </div>
+                      <button class="submit-btn" type="submit">
+                        <i class="fa-solid fa-circle-notch"></i>
+                        <span class="btn-text">Kirim</span>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer>
+      <div class="content">
+        <p>This website made with ❤️ by <span>Risang</span></p>
+        <p>© 2024 | All rights reserved</p>
+      </div>
+    </footer>
+
+    <!--========== SWEET ALERT ==========-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
