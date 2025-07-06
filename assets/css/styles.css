@@ -468,6 +468,7 @@ img {
   grid-gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-top: 1rem;
+  grid-auto-rows: min-content;
 }
 
 .projects .project-item {

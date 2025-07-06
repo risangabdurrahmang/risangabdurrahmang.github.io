@@ -38,17 +38,14 @@ themeButton.addEventListener("click", () => {
 });
 
 /*=============== Project Desc Accordion ===============*/
-var acc = document.getElementsByClassName("project-name");
-var i;
+let acc = document.getElementsByClassName("project-name");
 
-for (i = 0; i < acc.length; i++) {
+for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function () {
     this.classList.toggle("active");
-    var projectDesc = this.nextElementSibling;
-    if (projectDesc.style.display === "block") {
-      projectDesc.style.display = "none";
-    } else {
-      projectDesc.style.display = "block";
+    let projectDesc = this.parentElement.querySelector(".projectDesc");
+    if (projectDesc) {
+      projectDesc.style.display = projectDesc.style.display === "block" ? "none" : "block";
     }
   });
 }
