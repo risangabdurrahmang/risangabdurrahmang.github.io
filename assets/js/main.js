@@ -1,7 +1,7 @@
 /*=============== Tabs Menu ===============*/
 document.getElementById("defaultOpen").click();
 function openTab(evt, tabName) {
-  var i, tabcontent, tablinks;
+  let i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
@@ -36,19 +36,6 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("theme", getCurrentTheme());
   localStorage.setItem("icon", getCurrentIcon());
 });
-
-/*=============== Project Desc Accordion ===============*/
-let acc = document.getElementsByClassName("project-name");
-
-for (let i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    let projectDesc = this.parentElement.querySelector(".projectDesc");
-    if (projectDesc) {
-      projectDesc.style.display = projectDesc.style.display === "block" ? "none" : "block";
-    }
-  });
-}
 
 /*=============== Send Message Form ===============*/
 const form = document.getElementById("form");

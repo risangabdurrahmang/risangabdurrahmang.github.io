@@ -34,6 +34,8 @@
   --valid: skyblue;
   --focus: orange;
   --invalid: red;
+
+  interpolate-size: allow-keywords;
 }
 
 /*========== Responsive typography ==========*/
@@ -502,34 +504,38 @@ img {
   border-radius: 20px;
 }
 
-.projects .project-item .project-name {
+details {
+  color: var(--color-grey-2);
+  padding: 1rem;
+}
+
+details summary {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
   color: var(--color-grey-1);
   font-weight: bold;
   font-size: var(--h2-font-size);
-  margin-bottom: 0.75rem;
   cursor: pointer;
 }
 
-.projects .project-item .project-detail {
-  margin: 2.25rem 1rem 1.5rem 1rem;
-}
-
-.projects .project-item .project-detail .project-name {
-  display: flex;
-  justify-content: space-between;
-}
-
-.projects .project-item .project-detail i {
-  animation: arrow-pulse-down 1200ms linear infinite;
-}
-
-.projects .project-item .projectDesc {
+details summary::-webkit-details-marker {
   display: none;
-  margin: 0.5rem 0;
-  text-align: justify;
-  color: var(--color-grey-2);
-  line-height: 1.5em;
+}
+
+details[open] summary {
+  margin-bottom: 0.5rem;
+}
+
+details::details-content {
+  height: 0;
   overflow: hidden;
+  transition: height 0.3s, content-visibility 0.3s;
+  transition-behavior: allow-discrete;
+}
+
+details[open]::details-content {
+  height: auto;
 }
 
 .tech-stack {
